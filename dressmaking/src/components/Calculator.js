@@ -5,7 +5,7 @@ import OutputTable from "./OutputTable"
 
 export default class Calculator extends React.Component {
   state = {
-      calculated: false,
+    calculated: false,
   }
   updateState = (name, value) => {
     this.setState({ [name]: value })
@@ -29,16 +29,16 @@ export default class Calculator extends React.Component {
       luz4,
       luz5,
     } = this.state
-    let a = opx - (8 / 7) * opp
-    let SyP = (1 / 9) * opp + 10.8 + dk
-    let PcPl = (1 / 7) * opp - 1.5 + luz2
-    let S3R2 = SvRv + luz1
-    let SyT = 0.25 * ZWo - 1
-    let SyS2 = (1 / 18) * opp + 2.1
-    let b = 0.25 * ob + 0.5 * luz4
-    let wb = 0.2 * (ob - ot) - 1.5
-    let z = 2 * (b - wb) - 0.5 * ot - luz5
-    let R3R4 = (1 / 18) * opp - (1 / 20) * a
+    let a = (opx - (8 / 7) * opp).toFixed(1)
+    let SyP = ((1 / 9) * opp + 10.8 + dk).toFixed(1)
+    let PcPl = ((1 / 7) * opp - 1.5 + luz2).toFixed(1)
+    let S3R2 = (SvRv + luz1).toFixed(1)
+    let SyT = (0.25 * ZWo - 1).toFixed(1)
+    let SyS2 = ((1 / 18) * opp + 2.1).toFixed(1)
+    let b = (0.25 * ob + 0.5 * luz4).toFixed(1)
+    let wb = (0.2 * (ob - ot) - 1.5).toFixed(1)
+    let z = (2 * (b - wb) - 0.5 * ot - luz5).toFixed(1)
+    let R3R4 = ((1 / 18) * opp - (1 / 20) * a).toFixed(1)
 
     this.setState({
       SyP: SyP,
@@ -50,9 +50,9 @@ export default class Calculator extends React.Component {
       ByB: 2,
       KyK: 2,
       a: a,
-      PyPc: (1 / 7) * opp - 5.5 + luz1,
+      PyPc: (1 / 7) * opp + 5.5 + luz1,
       PcPl: PcPl,
-      PlPx: (2 / 7) * opp - 4 + 0.5 * a,
+      PlPx: (2 / 7) * opp - 4 + 0.5 * a + luz3,
       PyPx: (4 / 7) * opp + 0.5 * a + luz1 + luz2 + luz3,
       PcPv: (2 / 3) * PcPl,
       PxPp: (1 / 9) * opp + 0.8 + (1 / 8) * a,
@@ -60,7 +60,7 @@ export default class Calculator extends React.Component {
       S2S3: 2,
       S1R1: 1.2,
       S3R2: S3R2,
-      //PlR3: PcR1 - 2 - 0.1*a,
+      PlR3: "PcR1 - ${2 - 0.1*a}",
       R3R4: R3R4,
       R4S7: S3R2 - 1,
       TxTa: 0.25 * a,

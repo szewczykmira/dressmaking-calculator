@@ -64,7 +64,7 @@ export default class InputTable extends React.Component {
             passState={passState}
           />
           <InputRow
-            title="wysokość ramienia z tabelii"
+            title="wysokość ramienia"
             shortcut="SvRv"
             passState={passState}
           />
