@@ -42,7 +42,7 @@ export default class OutputTable extends React.Component {
           <OutputRow shortcut="S3R2" values={currentState} />
           <OutputRow shortcut="PlR3" values={currentState} />
           <OutputRow shortcut="R3R4" values={currentState} />
-          <OutputRow shortcut="P4S7" values={currentState} />
+          <OutputRow shortcut="R4S7" values={currentState} />
           <OutputRow shortcut="TxTa" values={currentState} />
           <OutputRow shortcut="TaS4" values={currentState} />
           <OutputRow shortcut="S4S6" values={currentState} />
