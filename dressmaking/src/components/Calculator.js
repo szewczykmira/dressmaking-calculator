@@ -7,7 +7,6 @@ let roundValue = value => {
   try {
     return Math.round(value * 10) / 10
   } catch (error) {
-    console.log("Błąd =>", error)
     return value
   }
 }
@@ -17,7 +16,6 @@ export default class Calculator extends React.Component {
     calculated: false,
   }
   updateState = (name, value) => {
-    console.log(value, typeof(value), name)
     this.setState({ [name]: parseFloat(value) })
   }
 
@@ -90,7 +88,6 @@ export default class Calculator extends React.Component {
   }
 
   render = () => {
-    console.log(this.state)
     return (
       <div className="container">
         <div className="row">
